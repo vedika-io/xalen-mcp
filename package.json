@@ -1,0 +1,49 @@
+{
+  "name": "xalen-mcp",
+  "version": "1.0.0",
+  "description": "MCP server for the XALEN API — full faith-tech marketplace with chat completions, embeddings, image generation, audio transcription, Vedic astrology (kundali, matching, panchang, dasha, yogas, transits, horoscope), Vastu analysis, voice TTS, and billing.",
+  "license": "MIT",
+  "type": "module",
+  "bin": {
+    "xalen-mcp": "dist/index.js"
+  },
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "start": "node dist/index.js",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.1",
+    "zod": "^3.25.17"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.17",
+    "typescript": "^5.8.3"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "mcp",
+    "xalen",
+    "ai",
+    "astrology",
+    "vedic",
+    "kundali",
+    "panchang",
+    "dasha",
+    "yoga",
+    "horoscope",
+    "vastu",
+    "embeddings",
+    "tts",
+    "stt",
+    "openai-compatible",
+    "faith-tech"
+  ]
+}
